@@ -1,0 +1,37 @@
+{
+  "name": "dsh-image-mmx",
+  "version": "1.0.0",
+  "description": "让文本模型（如 DeepSeek）在 DSH 里直接收发图片：图片落盘工作区、模型可见面自动替换为 mmx（MiniMax VLM）识别结果，用户侧照常显示缩略图。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "image",
+    "vision",
+    "mmx",
+    "minimax",
+    "cordis"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
