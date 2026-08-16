@@ -1,0 +1,6 @@
+# dsh-image-mmx 的 bundle patch 层。
+# 安装进 profile 后，本层会在组合里插入一行，挂载 lib/index.js 的 Cordis 插件。
+- insert:
+    - id: image-mmx
+      name: dsh-image-mmx
+      config: {}
